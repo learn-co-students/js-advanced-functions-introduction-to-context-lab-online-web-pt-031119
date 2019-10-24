@@ -137,7 +137,7 @@ describe("The payroll system", function () {
       it("calculates that the employee worked 2 hours", function () {
         cRecord = createEmployeeRecord(["Julius", "Caesar", "General", 1000])
         updatedBpRecord = createTimeInEvent(cRecord, "0044-03-15 0900")
-        updatedBpRecord = createTimeOutEvent(cRecord, "0044-03-15 1100")
+        updatedBpRecord = createTimeOutEvent(cRecord, "0044-04-15 1100") // changed 3 to 4
         expect(hoursWorkedOnDate(cRecord, "0044-03-15")).to.equal(2)
       })
     })

@@ -39,7 +39,7 @@ function createTimeOutEvent(empRecord, dateStamp) {
 function hoursWorkedOnDate(empRecord, date) {
     const timeIn = empRecord.timeInEvents.find((event) => event.date === date).hour
     const timeOut = empRecord.timeOutEvents.find((event) => event.date === date).hour
-    return (timeIn && timeOut) ? (timeOut - timeIn) * .01 : Error('Matching TimeIn and TimeOut not found.')
+    console.log((timeIn && timeOut) ? (timeOut - timeIn) * .01 : Error('Matching TimeIn and TimeOut not found.'))
 }
 
 function wagesEarnedOnDate(empRecord, date) {
