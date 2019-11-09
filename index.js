@@ -18,14 +18,6 @@ function createEmployeeRecords(employeesInfoArray) {
   return employeesArray;
 }
 
-// function createEmployeeRecords(employeesInfoArray) {
-//   let employeesArray = [];
-//   employeesInfoArray.forEach(function(employee) {
-//     employeesArray.push(createEmployeeRecord(employee));
-//   });
-//   return employeesArray;
-// }
-
 function createTimeInEvent(empRecord, timeStamp) {
   let date = timeStamp.split(" ")[0];
   let time = timeStamp.split(" ")[1];
